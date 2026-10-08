@@ -69,8 +69,8 @@ TEMPLATES = [
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("POSTGRES_DB", "identity_db_apfc_user"),
-        "USER": os.environ.get("POSTGRES_USER", "postgres"),
+        "NAME": os.environ.get("POSTGRES_DB", "identity_db_apfc"),
+        "USER": os.environ.get("POSTGRES_USER", "identity_db_apfc_user"),
         "PASSWORD": os.environ.get("POSTGRES_PASSWORD", "otYfbeW2KhRhjfgNooadPuEvq8mk2M4a"),
         "HOST": os.environ.get("POSTGRES_HOST", "postgresql://identity_db_apfc_user:otYfbeW2KhRhjfgNooadPuEvq8mk2M4a@dpg-db3p00aj9qps738hdu4g-a/identity_db_apfc"),
         "PORT": os.environ.get("POSTGRES_PORT", "5432"),
